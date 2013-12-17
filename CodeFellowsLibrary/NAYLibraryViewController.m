@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Jeff Schwab. All rights reserved.
 //
 
-#import "NAYViewController.h"
+#import "NAYLibraryViewController.h"
 
-@interface NAYViewController ()
+@interface NAYLibraryViewController ()
 
 @end
 
-@implementation NAYViewController
+@implementation NAYLibraryViewController
 
 - (void)viewDidLoad
 {

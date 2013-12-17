@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NAYViewController : UIViewController
+@interface NAYLibraryViewController : UIViewController
 
 @end

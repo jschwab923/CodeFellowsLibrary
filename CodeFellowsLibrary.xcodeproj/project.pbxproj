@@ -15,13 +15,16 @@
 		AE99171B185FD0D3000F2173 /* NAYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99171A185FD0D3000F2173 /* NAYAppDelegate.m */; };
 		AE99171E185FD0D3000F2173 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE99171C185FD0D3000F2173 /* Main_iPhone.storyboard */; };
 		AE991721185FD0D3000F2173 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE99171F185FD0D3000F2173 /* Main_iPad.storyboard */; };
-		AE991724185FD0D3000F2173 /* NAYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE991723185FD0D3000F2173 /* NAYViewController.m */; };
+		AE991724185FD0D3000F2173 /* NAYLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE991723185FD0D3000F2173 /* NAYLibraryViewController.m */; };
 		AE991726185FD0D3000F2173 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE991725185FD0D3000F2173 /* Images.xcassets */; };
 		AE99172D185FD0D3000F2173 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE99172C185FD0D3000F2173 /* XCTest.framework */; };
 		AE99172E185FD0D3000F2173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE99170A185FD0D3000F2173 /* Foundation.framework */; };
 		AE99172F185FD0D3000F2173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE99170E185FD0D3000F2173 /* UIKit.framework */; };
 		AE991737185FD0D3000F2173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE991735185FD0D3000F2173 /* InfoPlist.strings */; };
 		AE991739185FD0D3000F2173 /* CodeFellowsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE991738185FD0D3000F2173 /* CodeFellowsLibraryTests.m */; };
+		AE99174A185FD1BB000F2173 /* NAYShelf.m in Sources */ = {isa = PBXBuildFile; fileRef = AE991749185FD1BB000F2173 /* NAYShelf.m */; };
+		AE99174D185FD1CB000F2173 /* NAYBook.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99174C185FD1CB000F2173 /* NAYBook.m */; };
+		AE991750185FD1EA000F2173 /* NAYLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99174F185FD1EA000F2173 /* NAYLibrary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +50,20 @@
 		AE99171A185FD0D3000F2173 /* NAYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAYAppDelegate.m; sourceTree = "<group>"; };
 		AE99171D185FD0D3000F2173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		AE991720185FD0D3000F2173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		AE991722185FD0D3000F2173 /* NAYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAYViewController.h; sourceTree = "<group>"; };
-		AE991723185FD0D3000F2173 /* NAYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAYViewController.m; sourceTree = "<group>"; };
+		AE991722185FD0D3000F2173 /* NAYLibraryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAYLibraryViewController.h; sourceTree = "<group>"; };
+		AE991723185FD0D3000F2173 /* NAYLibraryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAYLibraryViewController.m; sourceTree = "<group>"; };
 		AE991725185FD0D3000F2173 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE99172B185FD0D3000F2173 /* CodeFellowsLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeFellowsLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE99172C185FD0D3000F2173 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AE991734185FD0D3000F2173 /* CodeFellowsLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodeFellowsLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		AE991736185FD0D3000F2173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE991738185FD0D3000F2173 /* CodeFellowsLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeFellowsLibraryTests.m; sourceTree = "<group>"; };
+		AE991748185FD1BB000F2173 /* NAYShelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAYShelf.h; sourceTree = "<group>"; };
+		AE991749185FD1BB000F2173 /* NAYShelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAYShelf.m; sourceTree = "<group>"; };
+		AE99174B185FD1CB000F2173 /* NAYBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAYBook.h; sourceTree = "<group>"; };
+		AE99174C185FD1CB000F2173 /* NAYBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAYBook.m; sourceTree = "<group>"; };
+		AE99174E185FD1EA000F2173 /* NAYLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAYLibrary.h; sourceTree = "<group>"; };
+		AE99174F185FD1EA000F2173 /* NAYLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAYLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +123,13 @@
 		AE991710185FD0D3000F2173 /* CodeFellowsLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				AE991751185FD1F7000F2173 /* Model Classes */,
 				AE991719185FD0D3000F2173 /* NAYAppDelegate.h */,
 				AE99171A185FD0D3000F2173 /* NAYAppDelegate.m */,
 				AE99171C185FD0D3000F2173 /* Main_iPhone.storyboard */,
 				AE99171F185FD0D3000F2173 /* Main_iPad.storyboard */,
-				AE991722185FD0D3000F2173 /* NAYViewController.h */,
-				AE991723185FD0D3000F2173 /* NAYViewController.m */,
+				AE991722185FD0D3000F2173 /* NAYLibraryViewController.h */,
+				AE991723185FD0D3000F2173 /* NAYLibraryViewController.m */,
 				AE991725185FD0D3000F2173 /* Images.xcassets */,
 				AE991711185FD0D3000F2173 /* Supporting Files */,
 			);
@@ -153,6 +163,19 @@
 				AE991735185FD0D3000F2173 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE991751185FD1F7000F2173 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AE99174E185FD1EA000F2173 /* NAYLibrary.h */,
+				AE99174F185FD1EA000F2173 /* NAYLibrary.m */,
+				AE991748185FD1BB000F2173 /* NAYShelf.h */,
+				AE991749185FD1BB000F2173 /* NAYShelf.m */,
+				AE99174B185FD1CB000F2173 /* NAYBook.h */,
+				AE99174C185FD1CB000F2173 /* NAYBook.m */,
+			);
+			name = "Model Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE991717185FD0D3000F2173 /* main.m in Sources */,
-				AE991724185FD0D3000F2173 /* NAYViewController.m in Sources */,
+				AE991724185FD0D3000F2173 /* NAYLibraryViewController.m in Sources */,
+				AE99174D185FD1CB000F2173 /* NAYBook.m in Sources */,
 				AE99171B185FD0D3000F2173 /* NAYAppDelegate.m in Sources */,
+				AE991750185FD1EA000F2173 /* NAYLibrary.m in Sources */,
+				AE99174A185FD1BB000F2173 /* NAYShelf.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +501,7 @@
 				AE99173E185FD0D3000F2173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE99173F185FD0D3000F2173 /* Build configuration list for PBXNativeTarget "CodeFellowsLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +510,7 @@
 				AE991741185FD0D3000F2173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

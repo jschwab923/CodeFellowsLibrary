@@ -7,12 +7,14 @@
 //
 
 #import "NAYAppDelegate.h"
+#import "NAYLibrary.h"
 
 @implementation NAYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NAYLibrary *library = [[NAYLibrary alloc] init];
+    
     return YES;
 }
 							
