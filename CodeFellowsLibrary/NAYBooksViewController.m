@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	_globalData = [NAYSelectedItemDataSingleton getInstance];
+    _globalData = [NAYSelectedItemDataSingleton getInstance];
     _books = _globalData.selectedBooks;
 }
 
