@@ -8,7 +8,6 @@
 
 #import "NAYShelfViewController.h"
 #import "NAYBooksViewController.h"
-#import "NAYLibraryViewController.h"
 #import "NAYShelf.h"
 #import "NAYSelectedItemDataSingleton.h"
 
@@ -43,7 +42,8 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if (![segue.destinationViewController isKindOfClass:[NAYLibraryViewController class]]) {
+    
+    if ([segue.identifier isEqualToString:@"BooksSegue"]) {
         NSIndexPath *selectedRow = [self.shelvesTableView indexPathForSelectedRow];
         NAYShelf *selectedShelf = [_shelves objectAtIndex:selectedRow.row];
         NSArray *booksOnShelf = [selectedShelf booksOnShelf];
