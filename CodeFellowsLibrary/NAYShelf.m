@@ -22,15 +22,17 @@
 
 - (instancetype)init
 {
-    return [self initWithBooks:[NSArray array]];
+    return [self initWithBooksOnShelf:[NSArray array]
+                            shelfName:@"Unknown"];
 }
 
-- (instancetype)initWithBooks:(NSArray *)books
+- (instancetype)initWithBooksOnShelf:(NSArray *)booksOnShelf shelfName:(NSString *)shelfName
 {
     self = [super init];
     
-    if (self && books) {
-        _booksOnShelf = [books mutableCopy];
+    if (self && booksOnShelf && shelfName) {
+        _booksOnShelf = [booksOnShelf mutableCopy];
+        _shelfName = shelfName;
     }
     
     return self;

@@ -8,13 +8,14 @@
 
 #import "NAYAppDelegate.h"
 #import "NAYLibrary.h"
+#import "NAYShelf.h"
+#import "NAYBook.h"
+
 
 @implementation NAYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NAYLibrary *library = [[NAYLibrary alloc] init];
-    
     return YES;
 }
 							

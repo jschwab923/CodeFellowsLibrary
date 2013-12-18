@@ -13,8 +13,9 @@
 @interface NAYShelf : NSObject
 
 @property (nonatomic, copy) NSArray *booksOnShelf;
+@property (nonatomic) NSString *shelfName;
 
-- (instancetype)initWithBooks:(NSArray *)books;
+- (instancetype)initWithBooksOnShelf:(NSArray *)booksOnShelf shelfName:(NSString *)shelfName;
 - (void)addBookToShelf:(NAYBook *)bookToAdd;
 - (void)removeBookFromShelf:(NAYBook *)bookToRemove;
 

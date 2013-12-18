@@ -20,15 +20,16 @@
 
 - (instancetype)init
 {
-    return [self initWithShelves:[NSArray array]];
+    return [self initWithShelves:[NSArray array] libraryName:@"Unknown"];
 }
 
-- (instancetype)initWithShelves:(NSArray *)shelves
+- (instancetype)initWithShelves:(NSArray *)shelves libraryName:(NSString *)libraryName
 {
     self = [super init];
     
     if (self && shelves) {
         _allShelves = [shelves mutableCopy];
+        _libraryName = libraryName;
     }
     
     return self;

@@ -12,8 +12,9 @@
 @interface NAYLibrary : NSObject
 
 @property (nonatomic, copy) NSArray* allShelves;
+@property (nonatomic) NSString* libraryName;
 
-- (instancetype)initWithShelves:(NSArray *)shelves;
+- (instancetype)initWithShelves:(NSArray *)shelves libraryName:(NSString *)libraryName;
 
 - (NSArray *)allBooksInLibrary;
 - (void)addShelf:(NAYShelf *)shelfToAdd;
