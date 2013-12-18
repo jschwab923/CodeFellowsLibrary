@@ -9,14 +9,14 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="NAYLibraryViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HjM-n6-JI1"/>
-                        <viewControllerLayoutGuide type="bottom" id="qKy-RD-gxY"/>
+                        <viewControllerLayoutGuide type="top" id="xXX-md-D1J"/>
+                        <viewControllerLayoutGuide type="bottom" id="viT-4p-2sT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mQA-0Y-1cf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mQA-0Y-1cf">
                                 <rect key="frame" x="0.0" y="67" width="320" height="500"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,7 +43,7 @@
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="3PW-S8-8kB"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e07-Jz-v1l">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e07-Jz-v1l">
                                 <rect key="frame" x="0.0" y="23" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
@@ -58,6 +58,14 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="viT-4p-2sT" firstAttribute="top" secondItem="mQA-0Y-1cf" secondAttribute="bottom" constant="1" id="53A-2L-OWG"/>
+                            <constraint firstAttribute="trailing" secondItem="mQA-0Y-1cf" secondAttribute="trailing" id="5b4-ef-iQL"/>
+                            <constraint firstItem="e07-Jz-v1l" firstAttribute="trailing" secondItem="mQA-0Y-1cf" secondAttribute="trailing" id="ArC-5m-zov"/>
+                            <constraint firstItem="e07-Jz-v1l" firstAttribute="bottom" secondItem="mQA-0Y-1cf" secondAttribute="top" id="D5r-vW-wk8"/>
+                            <constraint firstItem="e07-Jz-v1l" firstAttribute="leading" secondItem="mQA-0Y-1cf" secondAttribute="leading" id="FJz-f0-wL5"/>
+                            <constraint firstItem="mQA-0Y-1cf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="cwk-Kk-09l"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Libraries" id="I0i-s0-wH7">
                         <barButtonItem key="rightBarButtonItem" title="Shelves" id="7oG-ZC-n6r"/>
@@ -75,14 +83,14 @@
             <objects>
                 <viewController id="cp5-tq-tSR" customClass="NAYShelfViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Kp4-58-PzQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="ea9-Mn-W0b"/>
+                        <viewControllerLayoutGuide type="top" id="6xd-jK-G3o"/>
+                        <viewControllerLayoutGuide type="bottom" id="mcA-QE-YWH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="exA-l6-L96">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-9b-s2U">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-9b-s2U">
                                 <rect key="frame" x="0.0" y="68" width="320" height="500"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -109,7 +117,7 @@
                                     <outlet property="dataSource" destination="cp5-tq-tSR" id="XP5-xK-eSG"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIh-3h-NKF">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIh-3h-NKF">
                                 <rect key="frame" x="0.0" y="24" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
@@ -129,6 +137,14 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ly9-9b-s2U" firstAttribute="leading" secondItem="exA-l6-L96" secondAttribute="leading" id="DZW-Gt-Rad"/>
+                            <constraint firstItem="yIh-3h-NKF" firstAttribute="bottom" secondItem="ly9-9b-s2U" secondAttribute="top" id="QLZ-ug-Uug"/>
+                            <constraint firstAttribute="trailing" secondItem="ly9-9b-s2U" secondAttribute="trailing" id="bw4-2U-q9D"/>
+                            <constraint firstItem="yIh-3h-NKF" firstAttribute="leading" secondItem="ly9-9b-s2U" secondAttribute="leading" id="epL-hJ-ch0"/>
+                            <constraint firstItem="yIh-3h-NKF" firstAttribute="trailing" secondItem="ly9-9b-s2U" secondAttribute="trailing" id="m0w-7t-bYC"/>
+                            <constraint firstAttribute="bottom" secondItem="ly9-9b-s2U" secondAttribute="bottom" id="zTc-pL-Yzd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shelves" id="pjj-Yz-yI0">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="VjW-bW-IRm"/>
@@ -147,14 +163,14 @@
             <objects>
                 <viewController id="i7U-9M-Aqa" customClass="NAYBooksViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="x4L-uo-Kil"/>
-                        <viewControllerLayoutGuide type="bottom" id="D2Y-Hi-HKq"/>
+                        <viewControllerLayoutGuide type="top" id="R6E-5w-D7P"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Iq-xh-4Yf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x0Z-nB-tIq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="beb-e7-6CE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="beb-e7-6CE">
                                 <rect key="frame" x="0.0" y="68" width="320" height="500"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -181,7 +197,7 @@
                                     <outlet property="dataSource" destination="i7U-9M-Aqa" id="bsV-VV-ghK"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fid-YF-ZTT">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fid-YF-ZTT">
                                 <rect key="frame" x="0.0" y="24" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
@@ -196,6 +212,14 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="beb-e7-6CE" secondAttribute="trailing" id="0w7-nc-pjx"/>
+                            <constraint firstItem="beb-e7-6CE" firstAttribute="leading" secondItem="x0Z-nB-tIq" secondAttribute="leading" id="6br-HJ-sKD"/>
+                            <constraint firstAttribute="bottom" secondItem="beb-e7-6CE" secondAttribute="bottom" id="A7R-yZ-9kg"/>
+                            <constraint firstItem="fid-YF-ZTT" firstAttribute="leading" secondItem="beb-e7-6CE" secondAttribute="leading" id="IAG-h9-9Rd"/>
+                            <constraint firstItem="beb-e7-6CE" firstAttribute="top" secondItem="fid-YF-ZTT" secondAttribute="bottom" id="bqB-vx-U3J"/>
+                            <constraint firstItem="fid-YF-ZTT" firstAttribute="trailing" secondItem="beb-e7-6CE" secondAttribute="trailing" id="e4I-Uf-Y47"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Books" id="Wix-Ll-LkS">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="eKg-cP-mHM"/>
