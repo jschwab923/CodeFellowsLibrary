@@ -9,13 +9,13 @@
 #import "NAYBooksViewController.h"
 #import "NAYShelfViewController.h"
 #import "NAYBook.h"
-#import "SelectedItemData.h"
+#import "SelectedItemDataSingleton.h"
 
 @interface NAYBooksViewController ()
 
 {
     NSArray *_books;
-    SelectedItemData *_globalData;
+    SelectedItemDataSingleton *_globalData;
 }
 
 @property (nonatomic) IBOutlet UITableView *booksTableView;
@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	_globalData = [SelectedItemData getInstance];
+	_globalData = [SelectedItemDataSingleton getInstance];
     _books = _globalData.selectedBooks;
 }
 

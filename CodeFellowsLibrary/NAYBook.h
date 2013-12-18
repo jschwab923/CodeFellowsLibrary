@@ -16,8 +16,6 @@
 @property (nonatomic) NSString *author;
 @property (nonatomic, weak) NAYShelf *shelf;
 
-@property (nonatomic) IBOutlet UITableView *booksTableView;
-
 - (instancetype)initWithTitle:(NSString *)title author:(NSString *)author;
 - (void)removeFromCurrentShelf;
 - (void)addToShelf:(NAYShelf *)shelfToAddTo;

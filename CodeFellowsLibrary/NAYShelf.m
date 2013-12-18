@@ -60,7 +60,9 @@
 
 - (void)setBooksOnShelf:(NSArray *)booksOnShelf
 {
-    _booksOnShelf = [booksOnShelf mutableCopy];
+    if (booksOnShelf) {
+        _booksOnShelf = [booksOnShelf mutableCopy];
+    }
 }
 
 - (NSArray *)booksOnShelf

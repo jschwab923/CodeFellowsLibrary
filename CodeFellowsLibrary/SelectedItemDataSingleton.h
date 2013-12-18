@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SelectedItemData : NSObject
+@interface SelectedItemDataSingleton : NSObject
 
 @property (nonatomic) NSArray *selectedShelves;
 @property (nonatomic) NSArray *selectedBooks;
 
-+ (SelectedItemData *)getInstance;
++ (SelectedItemDataSingleton *)getInstance;
 
 @end

@@ -8,7 +8,7 @@
 
 #import "NAYLibraryViewController.h"
 #import "NAYShelfViewController.h"
-#import "SelectedItemData.h"
+#import "SelectedItemDataSingleton.h"
 
 @interface NAYLibraryViewController ()
 
@@ -100,7 +100,7 @@
     NAYLibrary *selectedLibrary = [_libraries objectAtIndex:selectedRow.row];
     NSArray *shelves = [selectedLibrary allShelves];
     
-    SelectedItemData *globalData = [SelectedItemData getInstance];
+    SelectedItemDataSingleton *globalData = [SelectedItemDataSingleton getInstance];
     [globalData setSelectedShelves:shelves];
 }
 

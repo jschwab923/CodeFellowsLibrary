@@ -26,7 +26,7 @@
 		AE991750185FD1EA000F2173 /* NAYLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99174F185FD1EA000F2173 /* NAYLibrary.m */; };
 		AEDCCEE2185FF1FF00DBA97A /* NAYShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDCCEE1185FF1FF00DBA97A /* NAYShelfViewController.m */; };
 		AEDCCEE5185FF27200DBA97A /* NAYBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDCCEE4185FF27200DBA97A /* NAYBooksViewController.m */; };
-		AEDD3EAB186130EA00BA2664 /* SelectedItemData.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDD3EAA186130EA00BA2664 /* SelectedItemData.m */; };
+		AEDD3EAB186130EA00BA2664 /* SelectedItemDataSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDD3EAA186130EA00BA2664 /* SelectedItemDataSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +69,8 @@
 		AEDCCEE1185FF1FF00DBA97A /* NAYShelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAYShelfViewController.m; sourceTree = "<group>"; };
 		AEDCCEE3185FF27200DBA97A /* NAYBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAYBooksViewController.h; sourceTree = "<group>"; };
 		AEDCCEE4185FF27200DBA97A /* NAYBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAYBooksViewController.m; sourceTree = "<group>"; };
-		AEDD3EA9186130EA00BA2664 /* SelectedItemData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectedItemData.h; path = CodeFellowsLibrary/SelectedItemData.h; sourceTree = "<group>"; };
-		AEDD3EAA186130EA00BA2664 /* SelectedItemData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectedItemData.m; path = CodeFellowsLibrary/SelectedItemData.m; sourceTree = "<group>"; };
+		AEDD3EA9186130EA00BA2664 /* SelectedItemDataSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectedItemDataSingleton.h; path = CodeFellowsLibrary/SelectedItemDataSingleton.h; sourceTree = "<group>"; };
+		AEDD3EAA186130EA00BA2664 /* SelectedItemDataSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectedItemDataSingleton.m; path = CodeFellowsLibrary/SelectedItemDataSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 		AE9916FE185FD0D3000F2173 = {
 			isa = PBXGroup;
 			children = (
-				AEDD3EA9186130EA00BA2664 /* SelectedItemData.h */,
-				AEDD3EAA186130EA00BA2664 /* SelectedItemData.m */,
+				AEDD3EA9186130EA00BA2664 /* SelectedItemDataSingleton.h */,
+				AEDD3EAA186130EA00BA2664 /* SelectedItemDataSingleton.m */,
 				AE991710185FD0D3000F2173 /* CodeFellowsLibrary */,
 				AE991732185FD0D3000F2173 /* CodeFellowsLibraryTests */,
 				AE991709185FD0D3000F2173 /* Frameworks */,
@@ -296,7 +296,7 @@
 				AE991750185FD1EA000F2173 /* NAYLibrary.m in Sources */,
 				AE99174A185FD1BB000F2173 /* NAYShelf.m in Sources */,
 				AEDCCEE2185FF1FF00DBA97A /* NAYShelfViewController.m in Sources */,
-				AEDD3EAB186130EA00BA2664 /* SelectedItemData.m in Sources */,
+				AEDD3EAB186130EA00BA2664 /* SelectedItemDataSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

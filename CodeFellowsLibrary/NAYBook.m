@@ -27,6 +27,7 @@
     return self;
 }
 
+// If no other reference to book this method will cause book to be deallocated.
 - (void)removeFromCurrentShelf
 {
     if (self.shelf) {
