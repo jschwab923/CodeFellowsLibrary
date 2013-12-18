@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NAYShelfViewController : UIViewController
+@interface NAYShelfViewController : UIViewController <UITableViewDataSource>
 
 @end

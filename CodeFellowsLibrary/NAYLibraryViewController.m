@@ -20,7 +20,6 @@
 }
 
 @property (nonatomic) IBOutlet UITableView *librariesTableView;
-@property (nonatomic) IBOutlet UINavigationBar *navigationBar;
 
 @end
 
@@ -85,8 +84,6 @@
         NAYLibrary *localLibrary = [[NAYLibrary alloc] initWithShelves:localShelves libraryName:@"Local Library"];
         
         [_libraries addObject:localLibrary];
-        
-        
     }
 }
 
