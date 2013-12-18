@@ -31,8 +31,8 @@
     self = [super init];
     
     if (self && books && name) {
-        _booksOnShelf = [books mutableCopy];
         _shelfName = name;
+        [self setBooksOnShelf:books];
     }
     
     return self;
@@ -47,8 +47,8 @@
     // Assuming shelves shouldn't contain more than one copy of book
     // though could be reasonable to allow this.
     if (book && ![_booksOnShelf containsObject:book]) {
-        [_booksOnShelf addObject:book];
         book.shelf = self;
+        [_booksOnShelf addObject:book];
     }
 }
 
@@ -62,7 +62,9 @@
 - (void)setBooksOnShelf:(NSArray *)books
 {
     if (books) {
-        _booksOnShelf = [books mutableCopy];
+        for (NAYBook *b in books) {
+            [self addBookToShelf:b];
+        }
     }
 }
 
