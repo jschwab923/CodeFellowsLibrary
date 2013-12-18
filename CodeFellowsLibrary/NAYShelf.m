@@ -55,7 +55,10 @@
 - (void)removeBookFromShelf:(NAYBook *)book
 {
     if (_booksOnShelf) {
-        [_booksOnShelf removeObject:book];
+        if ([_booksOnShelf containsObject:book]) {
+            book.shelf = nil;
+            [_booksOnShelf removeObject:book];
+        }
     }
 }
 

@@ -32,7 +32,6 @@
 {
     if (self.shelf) {
         [self.shelf removeBookFromShelf:self];
-        self.shelf = nil;
     }
 }
 
