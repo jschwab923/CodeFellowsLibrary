@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE30DB18186183D20028EBE9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE30DB17186183D20028EBE9 /* Main_iPad.storyboard */; };
+		AE30DB1B18618AB60028EBE9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE30DB1918618AB60028EBE9 /* Main_iPad.storyboard */; };
 		AE4AE75118614C6D0098190F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4AE75018614C6D0098190F /* libsqlite3.dylib */; };
 		AE4AE75418614CAC0098190F /* NAYBookDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AE75318614CAC0098190F /* NAYBookDataController.m */; };
 		AE99170B185FD0D3000F2173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE99170A185FD0D3000F2173 /* Foundation.framework */; };
@@ -43,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE30DB17186183D20028EBE9 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		AE30DB1A18618AB60028EBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		AE4AE75018614C6D0098190F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		AE4AE75218614CAC0098190F /* NAYBookDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NAYBookDataController.h; path = CodeFellowsLibrary/NAYBookDataController.h; sourceTree = "<group>"; };
 		AE4AE75318614CAC0098190F /* NAYBookDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAYBookDataController.m; path = CodeFellowsLibrary/NAYBookDataController.m; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 			children = (
 				AE991751185FD1F7000F2173 /* Model Classes */,
 				AE99171C185FD0D3000F2173 /* Main_iPhone.storyboard */,
-				AE30DB17186183D20028EBE9 /* Main_iPad.storyboard */,
+				AE30DB1918618AB60028EBE9 /* Main_iPad.storyboard */,
 				AE991719185FD0D3000F2173 /* NAYAppDelegate.h */,
 				AE99171A185FD0D3000F2173 /* NAYAppDelegate.m */,
 				AEDCCEE3185FF27200DBA97A /* NAYBooksViewController.h */,
@@ -280,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE991726185FD0D3000F2173 /* Images.xcassets in Resources */,
-				AE30DB18186183D20028EBE9 /* Main_iPad.storyboard in Resources */,
+				AE30DB1B18618AB60028EBE9 /* Main_iPad.storyboard in Resources */,
 				AE99171E185FD0D3000F2173 /* Main_iPhone.storyboard in Resources */,
 				AE991715185FD0D3000F2173 /* InfoPlist.strings in Resources */,
 			);
@@ -333,6 +333,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AE30DB1918618AB60028EBE9 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE30DB1A18618AB60028EBE9 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
 		AE991713185FD0D3000F2173 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
