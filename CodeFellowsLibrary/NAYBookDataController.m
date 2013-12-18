@@ -88,14 +88,14 @@ const NSString *_databaseName = @"Shelves";
 
 - (void)addBook:(NAYBook *)book
 {
-    sqlite3_open([_databasePath UTF8String], &_database);
-    
-    if (!_database) {
+    if (sqlite3_open([_databasePath UTF8String], &_database) != SQLITE_OK) {
         NSLog(@"Error opening database");
     } else {
         sqlite3_stmt *queryStatement;
-        const char *addStatement = [[NSString stringWithFormat:@"INSERT INTO %@(id, title, author) VALUES('%i', '%@', '%@')", _tableName, (int)book.id, book.title, book.author] UTF8String];
-        if (sqlite3_prepare_v2(_database, addStatement, -1, &queryStatement, nil) != SQLITE_OK) {
+        const char *addStatement = [[NSString stringWithFormat:
+                                     @"INSERT INTO %@ (id, title, author) VALUES('%i', '%@', '%@')", _tableName, (int)book.id, book.title, book.author] UTF8String];
+        
+        if (sqlite3_prepare_v2(_database, addStatement, -1, &queryStatement, NULL) != SQLITE_OK) {
             NSLog(@"Error preparing statment. Error: '%s'", sqlite3_errmsg(_database));
             sqlite3_close(_database);
             return;
