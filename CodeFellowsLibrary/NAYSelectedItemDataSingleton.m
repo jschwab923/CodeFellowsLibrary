@@ -33,7 +33,7 @@
     return sharedInstance;
 }
 
-- (void) setUpLibraries
+- (void)setUpLibraries
 {
     NSMutableArray *librarySetUp = [NSMutableArray array];
     // Set up books and shelves for downtown library
