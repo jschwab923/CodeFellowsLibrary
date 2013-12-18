@@ -8,7 +8,10 @@
 
 #import "NAYLibraryViewController.h"
 #import "NAYShelfViewController.h"
-#import "SelectedItemDataSingleton.h"
+#import "NAYSelectedItemDataSingleton.h"
+#import "NAYLibrary.h"
+#import "NAYShelf.h"
+#import "NAYBook.h"
 
 @interface NAYLibraryViewController ()
 
@@ -100,7 +103,7 @@
     NAYLibrary *selectedLibrary = [_libraries objectAtIndex:selectedRow.row];
     NSArray *shelves = [selectedLibrary allShelves];
     
-    SelectedItemDataSingleton *globalData = [SelectedItemDataSingleton getInstance];
+    NAYSelectedItemDataSingleton *globalData = [NAYSelectedItemDataSingleton getInstance];
     [globalData setSelectedShelves:shelves];
 }
 
@@ -131,7 +134,7 @@
     UITableViewCell *cell = [self.librariesTableView dequeueReusableCellWithIdentifier:@"LibraryCell"];
     
     NAYLibrary *libraryAtCell = [_libraries objectAtIndex:indexPath.row];
-    cell.textLabel.text = libraryAtCell.libraryName;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", libraryAtCell];
     
     return cell;
 }

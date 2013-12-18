@@ -7,13 +7,13 @@
 //
 //  Singleton class for storing global data.
 
-#import "SelectedItemDataSingleton.h"
+#import "NAYSelectedItemDataSingleton.h"
 
-@implementation SelectedItemDataSingleton
+@implementation NAYSelectedItemDataSingleton
 
-+ (SelectedItemDataSingleton *)getInstance
++ (NAYSelectedItemDataSingleton *)getInstance
 {
-    static SelectedItemDataSingleton *sharedInstance = nil;
+    static NAYSelectedItemDataSingleton *sharedInstance = nil;
     
     if (sharedInstance == nil) {
         sharedInstance = [[self alloc] init];

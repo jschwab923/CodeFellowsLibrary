@@ -16,8 +16,11 @@
 @property (nonatomic) NSString *author;
 @property (nonatomic, weak) NAYShelf *shelf;
 
+// Needed to use sqlite database
+@property (nonatomic) NSInteger id;
+
 - (instancetype)initWithTitle:(NSString *)title author:(NSString *)author;
 - (void)removeFromCurrentShelf;
-- (void)addToShelf:(NAYShelf *)shelfToAddTo;
+- (void)addToShelf:(NAYShelf *)shelf;
 
 @end

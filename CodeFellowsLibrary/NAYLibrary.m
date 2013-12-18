@@ -49,23 +49,23 @@
     return nil;
 }
 
-- (void)addShelf:(NAYShelf *)shelfToAdd
+- (void)addShelf:(NAYShelf *)shelf
 {
     if (!_allShelves) {
         _allShelves = [NSMutableArray array];
     }
     
-    if (shelfToAdd) {
-        if (![_allShelves containsObject:shelfToAdd]) {
-            [_allShelves addObject:shelfToAdd];
+    if (shelf) {
+        if (![_allShelves containsObject:shelf]) {
+            [_allShelves addObject:shelf];
         }
     }
 }
 
-- (void)removeShelf:(NAYShelf *)shelfToRemove
+- (void)removeShelf:(NAYShelf *)shelf
 {
     if (_allShelves) {
-        [_allShelves removeObject:shelfToRemove];
+        [_allShelves removeObject:shelf];
     }
 }
 
@@ -82,6 +82,11 @@
     if (allShelves) {
         _allShelves = [allShelves mutableCopy];
     }
+}
+
+-(NSString *)description
+{
+    return self.libraryName;
 }
 
 

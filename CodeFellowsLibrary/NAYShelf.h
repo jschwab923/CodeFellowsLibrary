@@ -15,8 +15,8 @@
 @property (nonatomic, copy) NSArray *booksOnShelf;
 @property (nonatomic) NSString *shelfName;
 
-- (instancetype)initWithBooksOnShelf:(NSArray *)booksOnShelf shelfName:(NSString *)shelfName;
-- (void)addBookToShelf:(NAYBook *)bookToAdd;
-- (void)removeBookFromShelf:(NAYBook *)bookToRemove;
+- (instancetype)initWithBooksOnShelf:(NSArray *)books shelfName:(NSString *)name;
+- (void)addBookToShelf:(NAYBook *)book;
+- (void)removeBookFromShelf:(NAYBook *)book;
 
 @end

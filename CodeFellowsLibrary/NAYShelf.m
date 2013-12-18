@@ -26,19 +26,19 @@
                             shelfName:@"Unknown"];
 }
 
-- (instancetype)initWithBooksOnShelf:(NSArray *)booksOnShelf shelfName:(NSString *)shelfName
+- (instancetype)initWithBooksOnShelf:(NSArray *)books shelfName:(NSString *)name
 {
     self = [super init];
     
-    if (self && booksOnShelf && shelfName) {
-        _booksOnShelf = [booksOnShelf mutableCopy];
-        _shelfName = shelfName;
+    if (self && books && name) {
+        _booksOnShelf = [books mutableCopy];
+        _shelfName = name;
     }
     
     return self;
 }
 
-- (void)addBookToShelf:(NAYBook *)bookToAdd
+- (void)addBookToShelf:(NAYBook *)book
 {
     if (!_booksOnShelf) {
         _booksOnShelf = [NSMutableArray array];
@@ -46,22 +46,22 @@
     
     // Assuming shelves shouldn't contain more than one copy of book
     // though could be reasonable to allow this.
-    if (bookToAdd && ![_booksOnShelf containsObject:bookToAdd]) {
-        [_booksOnShelf addObject:bookToAdd];
+    if (book && ![_booksOnShelf containsObject:book]) {
+        [_booksOnShelf addObject:book];
     }
 }
 
-- (void)removeBookFromShelf:(NAYBook *)bookToRemove
+- (void)removeBookFromShelf:(NAYBook *)book
 {
     if (_booksOnShelf) {
-        [_booksOnShelf removeObject:bookToRemove];
+        [_booksOnShelf removeObject:book];
     }
 }
 
-- (void)setBooksOnShelf:(NSArray *)booksOnShelf
+- (void)setBooksOnShelf:(NSArray *)books
 {
-    if (booksOnShelf) {
-        _booksOnShelf = [booksOnShelf mutableCopy];
+    if (books) {
+        _booksOnShelf = [books mutableCopy];
     }
 }
 
@@ -71,6 +71,11 @@
         _booksOnShelf = [NSMutableArray array];
     }
     return [_booksOnShelf copy];
+}
+
+- (NSString *)description
+{
+    return self.shelfName;
 }
 
 @end

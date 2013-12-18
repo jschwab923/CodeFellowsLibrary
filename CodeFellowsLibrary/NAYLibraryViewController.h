@@ -7,9 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NAYLibrary.h"
-#import "NAYShelf.h"
-#import "NAYBook.h"
 
 @interface NAYLibraryViewController : UIViewController <UITableViewDataSource>
 

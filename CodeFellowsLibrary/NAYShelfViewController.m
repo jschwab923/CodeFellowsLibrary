@@ -10,13 +10,13 @@
 #import "NAYBooksViewController.h"
 #import "NAYLibraryViewController.h"
 #import "NAYShelf.h"
-#import "SelectedItemDataSingleton.h"
+#import "NAYSelectedItemDataSingleton.h"
 
 @interface NAYShelfViewController ()
 
 {
     NSArray *_shelves;
-    SelectedItemDataSingleton *_globalData;
+    NAYSelectedItemDataSingleton *_globalData;
 }
 
 @property (nonatomic) IBOutlet UITableView *shelvesTableView;
@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     
-    _globalData = [SelectedItemDataSingleton getInstance];
+    _globalData = [NAYSelectedItemDataSingleton getInstance];
     _shelves = _globalData.selectedShelves;
 }
 
@@ -78,7 +78,7 @@
     UITableViewCell *cell = [self.shelvesTableView dequeueReusableCellWithIdentifier:@"ShelfCell"];
     
     NAYShelf *shelfAtCell = [_shelves objectAtIndex:indexPath.row];
-    cell.textLabel.text = shelfAtCell.shelfName;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", shelfAtCell];
     
     return cell;
 }

@@ -9,13 +9,15 @@
 #import "NAYBooksViewController.h"
 #import "NAYShelfViewController.h"
 #import "NAYBook.h"
-#import "SelectedItemDataSingleton.h"
+#import "NAYSelectedItemDataSingleton.h"
+
+#import "NAYBookDataController.h"
 
 @interface NAYBooksViewController ()
 
 {
     NSArray *_books;
-    SelectedItemDataSingleton *_globalData;
+    NAYSelectedItemDataSingleton *_globalData;
 }
 
 @property (nonatomic) IBOutlet UITableView *booksTableView;
@@ -27,8 +29,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	_globalData = [SelectedItemDataSingleton getInstance];
+	_globalData = [NAYSelectedItemDataSingleton getInstance];
     _books = _globalData.selectedBooks;
+    
+    //[self testBookDataController];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,9 +54,39 @@
     cell.textLabel.numberOfLines = 0;
     
     NAYBook *bookAtCell = [_books objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"Title: %@\nAuthor: %@", bookAtCell.title, bookAtCell.author];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", bookAtCell];
     
     return cell;
 }
+
+#pragma mark - Testing database
+
+//- (void)testBookDataController
+//{
+//    NAYBookDataController *dataController = [[NAYBookDataController alloc] init];
+//    [dataController createTableWithName:@"Fantasy"];
+//    
+//    NSInteger i = 0;
+//    for (NAYBook *b in _books) {
+//        b.id = i;
+//        i++;
+//    }
+//    
+//    [dataController addArrayOfBooks:_books];
+//    
+//    _books = [dataController getAllBooks];
+//    NSLog(@"%@",_books);
+//    
+//    NAYBook *newBook = [[NAYBook alloc] initWithTitle:@"Test Title" author:@"Test Author"];
+//    newBook.id = 5;
+//    [dataController addBook:newBook];
+//    
+//    [newBook setAuthor:@"New Test Author"];
+//    [dataController updateBook:newBook];
+//    
+//    [dataController deleteBook:newBook];
+//    
+//    NSLog(@"%@", [dataController getAllBooks]);
+//}
 
 @end
