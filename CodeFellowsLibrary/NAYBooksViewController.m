@@ -11,6 +11,8 @@
 #import "NAYBook.h"
 #import "NAYSelectedItemDataSingleton.h"
 
+#import "NAYBookDataController.h"
+
 @interface NAYBooksViewController ()
 
 {
