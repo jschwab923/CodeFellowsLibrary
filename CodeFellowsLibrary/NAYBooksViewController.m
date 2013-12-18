@@ -55,4 +55,27 @@
     return cell;
 }
 
+- (IBAction)addBook
+{
+    UIAlertView *addBookPopup = [[UIAlertView alloc] initWithTitle:@"Enter Title and Author"
+                                                    message:@""
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:@"OK", nil];
+    
+    addBookPopup.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
+    [addBookPopup show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        NSString *title = [alertView textFieldAtIndex:0].text;
+        NSString *author = [alertView textFieldAtIndex:1].text;
+        NAYBook *newBook = [[NAYBook alloc] initWithTitle:title author:author];
+        [[_globalData.selectedBooks[0] shelf] addBookToShelf:newBook];
+        [_booksTableView reloadData];
+    }
+}
+
 @end

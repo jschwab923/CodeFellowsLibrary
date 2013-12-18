@@ -207,6 +207,11 @@
                                                 <segue destination="cp5-tq-tSR" kind="modal" id="GCV-du-Atv"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Add Book" id="Yva-MV-kCo">
+                                            <connections>
+                                                <action selector="addBook" destination="i7U-9M-Aqa" id="8B9-RH-rra"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>

@@ -48,6 +48,7 @@
     // though could be reasonable to allow this.
     if (book && ![_booksOnShelf containsObject:book]) {
         [_booksOnShelf addObject:book];
+        book.shelf = self;
     }
 }
 

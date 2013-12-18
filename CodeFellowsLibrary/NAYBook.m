@@ -43,7 +43,6 @@
         if (self.shelf) {
             [self.shelf removeBookFromShelf:self];
         }
-        self.shelf = shelf;
         [shelf addBookToShelf:self];
     }
 }
