@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1A7E4B18626E5F00201771 /* NAYBookDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1A7E4A18626E5F00201771 /* NAYBookDataController.m */; };
 		AE30DB1B18618AB60028EBE9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE30DB1918618AB60028EBE9 /* Main_iPad.storyboard */; };
 		AE4AE75118614C6D0098190F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4AE75018614C6D0098190F /* libsqlite3.dylib */; };
 		AE99170B185FD0D3000F2173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE99170A185FD0D3000F2173 /* Foundation.framework */; };
@@ -26,7 +27,6 @@
 		AE99174A185FD1BB000F2173 /* NAYShelf.m in Sources */ = {isa = PBXBuildFile; fileRef = AE991749185FD1BB000F2173 /* NAYShelf.m */; };
 		AE99174D185FD1CB000F2173 /* NAYBook.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99174C185FD1CB000F2173 /* NAYBook.m */; };
 		AE991750185FD1EA000F2173 /* NAYLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = AE99174F185FD1EA000F2173 /* NAYLibrary.m */; };
-		AEBDC962186247A200E10953 /* NAYBookDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBDC961186247A200E10953 /* NAYBookDataController.m */; };
 		AEDCCEE2185FF1FF00DBA97A /* NAYShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDCCEE1185FF1FF00DBA97A /* NAYShelfViewController.m */; };
 		AEDCCEE5185FF27200DBA97A /* NAYBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDCCEE4185FF27200DBA97A /* NAYBooksViewController.m */; };
 		AEDD3EAB186130EA00BA2664 /* NAYSelectedItemDataSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDD3EAA186130EA00BA2664 /* NAYSelectedItemDataSingleton.m */; };
@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE1A7E4A18626E5F00201771 /* NAYBookDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAYBookDataController.m; path = CodeFellowsLibrary/NAYBookDataController.m; sourceTree = "<group>"; };
 		AE30DB1A18618AB60028EBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		AE4AE75018614C6D0098190F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		AE4AE75218614CAC0098190F /* NAYBookDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NAYBookDataController.h; path = CodeFellowsLibrary/NAYBookDataController.h; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		AE99174C185FD1CB000F2173 /* NAYBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAYBook.m; sourceTree = "<group>"; };
 		AE99174E185FD1EA000F2173 /* NAYLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAYLibrary.h; sourceTree = "<group>"; };
 		AE99174F185FD1EA000F2173 /* NAYLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAYLibrary.m; sourceTree = "<group>"; };
-		AEBDC961186247A200E10953 /* NAYBookDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAYBookDataController.m; sourceTree = "<group>"; };
 		AEDCCEE0185FF1FF00DBA97A /* NAYShelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAYShelfViewController.h; sourceTree = "<group>"; };
 		AEDCCEE1185FF1FF00DBA97A /* NAYShelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAYShelfViewController.m; sourceTree = "<group>"; };
 		AEDCCEE3185FF27200DBA97A /* NAYBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAYBooksViewController.h; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				AEDD3EA9186130EA00BA2664 /* NAYSelectedItemDataSingleton.h */,
 				AEDD3EAA186130EA00BA2664 /* NAYSelectedItemDataSingleton.m */,
 				AE4AE75218614CAC0098190F /* NAYBookDataController.h */,
-				AEBDC961186247A200E10953 /* NAYBookDataController.m */,
+				AE1A7E4A18626E5F00201771 /* NAYBookDataController.m */,
 				AE991710185FD0D3000F2173 /* CodeFellowsLibrary */,
 				AE991732185FD0D3000F2173 /* CodeFellowsLibraryTests */,
 				AE991709185FD0D3000F2173 /* Frameworks */,
@@ -307,10 +307,10 @@
 				AE99171B185FD0D3000F2173 /* NAYAppDelegate.m in Sources */,
 				AEDCCEE5185FF27200DBA97A /* NAYBooksViewController.m in Sources */,
 				AE991750185FD1EA000F2173 /* NAYLibrary.m in Sources */,
-				AEBDC962186247A200E10953 /* NAYBookDataController.m in Sources */,
 				AE99174A185FD1BB000F2173 /* NAYShelf.m in Sources */,
 				AEDCCEE2185FF1FF00DBA97A /* NAYShelfViewController.m in Sources */,
 				AEDD3EAB186130EA00BA2664 /* NAYSelectedItemDataSingleton.m in Sources */,
+				AE1A7E4B18626E5F00201771 /* NAYBookDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
