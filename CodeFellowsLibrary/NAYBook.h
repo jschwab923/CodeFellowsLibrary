@@ -16,7 +16,7 @@
 @property (nonatomic) NSString *author;
 @property (nonatomic, weak) NAYShelf *shelf;
 
-// Needed to use sqlite database
+// Intended to be used with sqlite database
 @property (nonatomic) NSInteger id;
 
 - (instancetype)initWithTitle:(NSString *)title author:(NSString *)author;

@@ -10,6 +10,7 @@
 
 @interface NAYSelectedItemDataSingleton : NSObject
 
+@property (nonatomic) NSArray *libraries;
 @property (nonatomic) NSArray *selectedShelves;
 @property (nonatomic) NSArray *selectedBooks;
 

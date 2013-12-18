@@ -54,8 +54,8 @@
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {
     if (![self.shelvesTableView indexPathForSelectedRow] && [identifier isEqualToString:@"BooksSegue"]) {
-        UIAlertView *noSelectionAlert = [[UIAlertView alloc] initWithTitle:@"No selection"
-                                                                   message:@"Please select a shelf to browse"
+        UIAlertView *noSelectionAlert = [[UIAlertView alloc] initWithTitle:@""
+                                                                   message:@"Select a shelf to browse"
                                                                   delegate:Nil
                                                          cancelButtonTitle:@"Ok"
                                                          otherButtonTitles:nil];
