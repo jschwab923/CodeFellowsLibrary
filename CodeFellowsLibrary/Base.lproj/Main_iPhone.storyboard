@@ -159,7 +159,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" textLabel="evO-ph-WuQ" style="IBUITableViewCellStyleDefault" id="jfr-ku-wMB">
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" textLabel="evO-ph-WuQ" style="IBUITableViewCellStyleDefault" id="jfr-ku-wMB">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jfr-ku-wMB" id="uQT-3n-IU2">

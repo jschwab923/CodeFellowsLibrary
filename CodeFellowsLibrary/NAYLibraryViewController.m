@@ -45,7 +45,7 @@
         [downTownSciFiBooks addObject:[[NAYBook alloc] initWithTitle:@"The Reality Dysfunction" author:@"Peter F. Hamilton"]];
         
         [downTownProgrammingBooks addObject:[[NAYBook alloc] initWithTitle:@"The Art of Computer Programming" author:@"Donald Knuth"]];
-        [downTownProgrammingBooks addObject:[[NAYBook alloc] initWithTitle:@"Javascript: The Good Parts" author:@"Douglas CrockFord"]];
+        [downTownProgrammingBooks addObject:[[NAYBook alloc] initWithTitle:@"Javascript, The Good Parts" author:@"Douglas CrockFord"]];
         [downTownProgrammingBooks addObject:[[NAYBook alloc] initWithTitle:@"Code Complete 2" author:@"Steve McConnell"]];
         
         NAYShelf *downTownFantasyShelf = [[NAYShelf alloc] initWithBooksOnShelf:downTownFantasyBooks shelfName:@"Fantasy"];
@@ -108,7 +108,7 @@
 {
     if (![self.librariesTableView indexPathForSelectedRow] && [identifier isEqualToString:@"ShelvesSegue"]) {
         UIAlertView *noSelectionAlert = [[UIAlertView alloc] initWithTitle:@"No selection"
-                                                                   message:@"Must Select library to view"
+                                                                   message:@"Please select a library to browse"
                                                                   delegate:Nil
                                                          cancelButtonTitle:@"Ok"
                                                          otherButtonTitles:nil];

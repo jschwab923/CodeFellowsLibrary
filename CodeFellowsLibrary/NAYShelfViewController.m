@@ -55,7 +55,7 @@
 {
     if (![self.shelvesTableView indexPathForSelectedRow] && [identifier isEqualToString:@"BooksSegue"]) {
         UIAlertView *noSelectionAlert = [[UIAlertView alloc] initWithTitle:@"No selection"
-                                                                   message:@"Must Select shelf to view"
+                                                                   message:@"Please select a shelf to browse"
                                                                   delegate:Nil
                                                          cancelButtonTitle:@"Ok"
                                                          otherButtonTitles:nil];

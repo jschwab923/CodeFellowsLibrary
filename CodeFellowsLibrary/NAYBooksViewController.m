@@ -50,7 +50,7 @@
     cell.textLabel.numberOfLines = 0;
     
     NAYBook *bookAtCell = [_books objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"Title:%@\nAuthor:%@", bookAtCell.title, bookAtCell.author];
+    cell.textLabel.text = [NSString stringWithFormat:@"Title: %@\nAuthor: %@", bookAtCell.title, bookAtCell.author];
     
     return cell;
 }
