@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NAYBooksViewController : UIViewController <UITableViewDataSource, UIAlertViewDelegate>
+@interface NAYBooksViewController : UIViewController <UITableViewDataSource>
 
 @end
